@@ -14,9 +14,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
+    "http://jadcs-frontend.herokuapp.com/",
     "https://jadcs-frontend.herokuapp.com/",
-    "http://localhost",
-    "http://localhost:8080",
+
 ]
 
 app.add_middleware(
