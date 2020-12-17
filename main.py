@@ -13,11 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
-    "http://jadcs-frontend.herokuapp.com/",
-    "https://jadcs-frontend.herokuapp.com/",
-
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
